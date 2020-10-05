@@ -7,6 +7,17 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    
   %body
-    %h2 Devise layout
-    = yield
+    .hero
+    .hero-body
+    .columns
+    .column.is-half.is-offset-one-quarter
+    .has-text-centered
+    %h1.title.is-1.main-title
+    = link_to "WapiiNet", root_path
+    .card
+    .card-content
+    = yield            
+    
+    

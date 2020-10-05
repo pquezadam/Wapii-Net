@@ -11,5 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
  *= require bulma
+ *= require estilos
  *= require_self
  */
+ @import "bulma";
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
