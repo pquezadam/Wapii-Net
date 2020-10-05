@@ -1,0 +1,28 @@
+%h2.title.is-3 Registrate
+%hr
+
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = render "devise/shared/error_messages", resource: resource
+
+  .field
+    = f.label "Correo electrónico", class: "label"
+    .control
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "input"
+
+  .field
+    = f.label "Contraseña", class: "label"
+    .control
+      = f.password_field :password, autocomplete: "off", class: "input"
+    - if @minimum_password_length
+      %em.help (#{@minimum_password_length} caracteres mínimo)
+
+  .field
+    = f.label "Confirma Contraseña", class: "label"
+    .control
+    = f.password_field :password_confirmation, autocomplete: "off", class: "input"
+
+  .has-text-centered.big-margin-top
+    = f.submit "Registrarme", class: "button is-success is-fullwidth"
+
+.has-text-centered.big-margin-top    
+  = render "devise/shared/links"

@@ -6,18 +6,19 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     
   %body
     .hero
-    .hero-body
-    .columns
-    .column.is-half.is-offset-one-quarter
-    .has-text-centered
+      .hero-body
+        .columns
+          .column.is-half.is-offset-one-quarter
+            .has-text-centered.big-margin-bottom
     %h1.title.is-1.main-title
-    = link_to "WapiiNet", root_path
+      = link_to "WapiiNet", root_path
     .card
-    .card-content
-    = yield            
+      .card-content
+        = yield            
     
     
