@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     omniauth_callbacks: 'users/omniauth_callbacks'
   }
+
+  devise_scope :user do
+    post '/sign_up_validation', to: 'users/omniauth_callbacks#sign_up_validation'
+  end
     
 
     authenticated :user do
