@@ -1,5 +1,7 @@
 %h2.title.is-3 Ingresa
 %hr
+.big-margin-bottom
+  = render 'devise/shared/socials'
 
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   .field

@@ -1,4 +1,7 @@
 $light-blue: #e1f5fe;
+$facebook-blue: #3b5998;
+$facebook-blue-strong: #00287f;
+$white: #fff;
 
 html, body {
     background-color: $light-blue;
@@ -10,5 +13,15 @@ html, body {
     font-family: 'Pacifico', cursive;
 }
 
-
+.facebook-button {
+    background-color: $facebook-blue;
+    color: white;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    &:hover {
+        background-color: $facebook-blue-strong;
+        color: $white;
+    }
+}
 
