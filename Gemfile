@@ -37,7 +37,7 @@ gem "haml-rails", "~> 2.0"
 gem 'devise'
 gem 'rails-assets-bulma', source: 'https://rails-assets.org'
 gem 'omniauth-facebook'
-
+gem 'activerecord-session_store'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
