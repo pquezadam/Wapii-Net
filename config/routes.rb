@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     
 
     authenticated :user do
-      root 'main#index'
+      root 'posts#index'
     end
 
     unauthenticated :user do
