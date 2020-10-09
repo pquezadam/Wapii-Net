@@ -1,8 +1,8 @@
 %nav.navbar{"aria-label" => "main navigation", :role => "navigation"}
 
   .navbar-brand
-    %a.navbar-item{:href => "/"}
-      %span.title.is-3.main-title.my-5 Wapii-Net
+    %a.navbar-item(href => "/")
+      %span.title.is-2.title-header.mv10 Wapii-Net
     %a.navbar-burger.burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navbarBasicExample", :role => "button"}
       %span{"aria-hidden" => "true"}
       %span{"aria-hidden" => "true"}
@@ -14,4 +14,4 @@
         
     .navbar-end
       .navbar-item
-        = link_to "salir", destroy_user_session_path, method: :delete
+        = link_to "Salir", destroy_user_session_path, method: :delete
