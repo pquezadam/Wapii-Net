@@ -11,19 +11,19 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         end
     end
 
-    def sign_up_validation
-        @user = User.from_omniauth(session['devise_auth'])
+    #def sign_up_validation
+     #   @user = User.from_omniauth(session['devise_auth'])
 
-        if @user.update(user_params)
-            sign_in_and_redirect @user, event: :authentication
-        else
-            render :edit
-        end
-    end
+      #  if @user.update(user_params)
+       #     sign_in_and_redirect @user, event: :authentication
+       # else
+        #    render :edit
+        #end
+    #end
 
-    private
+    #private
 
-    def user_params
-        params.require(:user).permit(:email, :username, :name)
-    end
-end
+    #def user_params
+     #   params.require(:user).permit(:email, :username, :name)
+    #end
+#end
